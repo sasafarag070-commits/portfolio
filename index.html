@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Samuel Faragallah | Software Developer & Aspiring Junior .NET Developer</title>
+  <meta name="title" content="Samuel Faragallah | Software Developer & Aspiring Junior .NET Developer">
+  <meta name="description" content="Portfolio of Samuel Faragallah: Computer Science student focused on C#, .NET backend development, SQL, and Angular. Building clean, maintainable software and practical projects.">
+  <meta name="author" content="Samuel Faragallah">
+  <meta name="keywords" content="Samuel Faragallah, Junior .NET Developer, C#, .NET Developer, Computer Science, Backend Development, Angular, SQL, Portfolio">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://samuelfaragallah.example.com/">
+  <meta property="og:title" content="Samuel Faragallah | Software Developer & Aspiring Junior .NET Developer">
+  <meta property="og:description" content="Computer Science student focused on C#, .NET backend development, SQL, and Angular. Explore projects, technical skills, and learning journey.">
+  
+  <!-- Favicon (SVG Data URI for zero external file dependency) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236366f1'/><text x='50%' y='65%' font-family='sans-serif' font-weight='800' font-size='52' fill='white' text-anchor='middle'>SF</text></svg>">
+  
+  <!-- Google Fonts: Inter (Sans-Serif) & JetBrains Mono (Code/Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Skip to Main Content Link for Keyboard Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR
+       ========================================================================= -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container navbar-container">
+      
+      <!-- Brand Logo / Wordmark -->
+      <a href="#hero" class="brand-logo" aria-label="Samuel Faragallah Homepage">
+        <span class="brand-icon" aria-hidden="true">&lt;/&gt;</span>
+        <div class="brand-text">
+          <span class="brand-name">Samuel Faragallah</span>
+          <span class="brand-role">.NET & Software Dev</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" id="desktop-nav" role="navigation" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#journey" class="nav-link">Learning Journey</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#objective" class="nav-link">Objective</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Navigation Actions (Theme Toggle & Mobile Menu Trigger) -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <!-- Sun Icon (displayed in light mode) -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (displayed in dark mode) -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Slide-out Drawer Menu -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true" role="dialog" aria-label="Mobile Navigation">
+      <a href="#hero" class="mobile-nav-link active">Home</a>
+      <a href="#about" class="mobile-nav-link">About Me</a>
+      <a href="#skills" class="mobile-nav-link">Technical Skills</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#journey" class="mobile-nav-link">Learning Journey</a>
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#objective" class="mobile-nav-link">Career Objective</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- =======================================================================
+         2. HERO SECTION
+         ======================================================================= -->
+    <section class="section hero" id="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        
+        <!-- Left Column: Introduction & Call-to-Actions -->
+        <div class="hero-content reveal">
+          <div class="hero-badge-wrap">
+            <span class="status-badge">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              Open to Junior .NET Roles & Freelance
+            </span>
+          </div>
+
+          <h1 class="hero-headline" id="hero-heading">
+            Hi, I'm <span class="gradient-text">Samuel Faragallah</span>
+          </h1>
+
+          <p class="hero-subhead">
+            Software Developer | Aspiring Junior .NET Developer
+          </p>
+
+          <p class="hero-intro">
+            I'm a Computer Science student building practical skills in C#, .NET, SQL, and Angular. I enjoy solving problems, understanding how software works behind the scenes, and turning what I learn into practical projects as I grow toward a career in software development.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+              Explore My Work
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="hero-cta-contact">
+              Get in Touch
+            </a>
+          </div>
+
+          <!-- Quick Highlights Row -->
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <span class="stat-value">C# &amp; .NET</span>
+              <span class="stat-label">Core Backend Focus</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">CS Student</span>
+              <span class="stat-label">Academic Studies</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">Angular</span>
+              <span class="stat-label">Active Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Code & Terminal Preview -->
+        <div class="hero-visual reveal delay-1" aria-label="C# Code Sample Preview">
+          <div class="code-preview-window">
+            
+            <div class="window-header">
+              <div class="window-controls" aria-hidden="true">
+                <span class="control-dot red"></span>
+                <span class="control-dot yellow"></span>
+                <span class="control-dot green"></span>
+              </div>
+              <div class="window-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                <span>Program.cs — .NET 8</span>
+              </div>
+              <span class="window-badge">C# 12</span>
+            </div>
+
+            <div class="window-body">
+              <pre><code><div class="code-line"><span class="line-num">01</span><span class="code-text"><span class="syn-comment">// Welcome to Samuel's Developer Workspace</span></span></div><div class="code-line"><span class="line-num">02</span><span class="code-text"><span class="syn-kwd">using</span> <span class="syn-type">System</span>;</span></div><div class="code-line"><span class="line-num">03</span><span class="code-text"></span></div><div class="code-line"><span class="line-num">04</span><span class="code-text"><span class="syn-kwd">namespace</span> <span class="syn-type">Portfolio.Profile</span>;</span></div><div class="code-line"><span class="line-num">05</span><span class="code-text"></span></div><div class="code-line"><span class="line-num">06</span><span class="code-text"><span class="syn-kwd">public record</span> <span class="syn-type">DeveloperProfile</span>(</span></div><div class="code-line"><span class="line-num">07</span><span class="code-text">    <span class="syn-type">string</span> <span class="syn-prop">Name</span> = <span class="syn-str">"Samuel Faragallah"</span>,</span></div><div class="code-line"><span class="line-num">08</span><span class="code-text">    <span class="syn-type">string</span> <span class="syn-prop">TargetRole</span> = <span class="syn-str">"Junior .NET Developer"</span>,</span></div><div class="code-line"><span class="line-num">09</span><span class="code-text">    <span class="syn-type">string</span>[] <span class="syn-prop">BackendSkills</span> = [ <span class="syn-str">"C#"</span>, <span class="syn-str">".NET"</span>, <span class="syn-str">"SQL"</span> ],</span></div><div class="code-line"><span class="line-num">10</span><span class="code-text">    <span class="syn-type">string</span> <span class="syn-prop">FrontendFocus</span> = <span class="syn-str">"Angular (In Progress)"</span>,</span></div><div class="code-line"><span class="line-num">11</span><span class="code-text">    <span class="syn-type">bool</span> <span class="syn-prop">EagerToLearn</span> = <span class="syn-kwd">true</span></span></div><div class="code-line"><span class="line-num">12</span><span class="code-text">);</span></div><div class="code-line"><span class="line-num">13</span><span class="code-text"></span></div><div class="code-line"><span class="line-num">14</span><span class="code-text"><span class="syn-type">var</span> dev = <span class="syn-kwd">new</span> <span class="syn-type">DeveloperProfile</span>();</span></div><div class="code-line"><span class="line-num">15</span><span class="code-text"><span class="syn-type">Console</span>.<span class="syn-method">WriteLine</span>(<span class="syn-str">$"Ready to contribute: {dev.TargetRole}"</span>);</span></div></code></pre>
+            </div>
+
+            <div class="terminal-status-banner">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Build Succeeded: 0 Warning(s), 0 Error(s)
+              </span>
+              <span style="font-family: var(--font-mono); font-size: 0.725rem;">dotnet run</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. ABOUT ME SECTION
+         ======================================================================= -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title" id="about-heading">Curiosity, Discipline &amp; Code</h2>
+          <p class="section-desc">
+            A look into who I am, my current academic journey, and what drives my passion for software engineering.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Developer Profile Card (Photo / Monogram Placeholder) -->
+          <div class="profile-card reveal">
+            <!-- 
+              NOTE FOR USER:
+              To replace this SVG monogram with your real professional portrait photo,
+              simply place your photo in the project folder (e.g., "img/samuel.jpg") 
+              and replace the contents of .avatar-placeholder with:
+              <img src="img/samuel.jpg" alt="Samuel Faragallah" style="width:100%; height:100%; object-fit:cover;">
+            -->
+            <div class="profile-avatar-wrapper">
+              <div class="avatar-placeholder" aria-label="Samuel Faragallah Photo Placeholder">
+                <span class="avatar-monogram">SF</span>
+                <span class="avatar-badge-tag">Dev Profile</span>
+              </div>
+            </div>
+
+            <h3 class="profile-name">Samuel Faragallah</h3>
+            <p class="profile-role">Aspiring Junior .NET Developer</p>
+
+            <div class="profile-details-list">
+              <div class="profile-detail-item">
+                <span class="detail-label">Status</span>
+                <span class="detail-value">CS Student</span>
+              </div>
+              <div class="profile-detail-item">
+                <span class="detail-label">Primary Stack</span>
+                <span class="detail-value">C# &amp; .NET</span>
+              </div>
+              <div class="profile-detail-item">
+                <span class="detail-label">Learning</span>
+                <span class="detail-value">Angular &amp; SQL</span>
+              </div>
+              <div class="profile-detail-item">
+                <span class="detail-label">Goal</span>
+                <span class="detail-value">Junior .NET Role</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Narrative & Core Principles -->
+          <div class="about-text reveal delay-1">
+            <p class="lead-paragraph">
+              I am a Computer Science student developing strong foundational skills in software engineering, with a focused dedication to <strong>C# and .NET Backend Development</strong> alongside ongoing studies in <strong>Angular</strong>.
+            </p>
+
+            <p class="body-paragraph">
+              My approach to programming centers on understanding systems from the ground up: how object-oriented architectures fit together, how data flows reliably through backend layers, and how clean code practices turn complex concepts into dependable software. I believe in continuous learning, problem-solving through disciplined practice, and applying academic theory to real-world software applications.
+            </p>
+
+            <p class="body-paragraph">
+              As I grow, my ambition is to join a supportive engineering team as a <strong>Junior .NET Developer</strong> where I can contribute thoughtfully, learn from experienced colleagues, and help build maintainable solutions that solve real business problems.
+            </p>
+
+            <!-- Engineering Focus Cards -->
+            <div class="values-grid">
+              <div class="value-card">
+                <div class="value-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                </div>
+                <div>
+                  <h4>Object-Oriented Design</h4>
+                  <p>Emphasizing encapsulation, inheritance, interfaces, and maintainable classes.</p>
+                </div>
+              </div>
+
+              <div class="value-card">
+                <div class="value-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                </div>
+                <div>
+                  <h4>Continuous Learning</h4>
+                  <p>Consistently practicing new .NET features, design patterns, and full-stack basics.</p>
+                </div>
+              </div>
+
+              <div class="value-card">
+                <div class="value-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6-6-6"></path><path d="M12 19h8"></path></svg>
+                </div>
+                <div>
+                  <h4>Clean, Readable Code</h4>
+                  <p>Striving for structured naming, thoughtful separation, and readable logic.</p>
+                </div>
+              </div>
+
+              <div class="value-card">
+                <div class="value-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </div>
+                <div>
+                  <h4>Team Collaboration</h4>
+                  <p>Eager to receive constructive feedback and grow within an engineering team.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. TECHNICAL SKILLS SECTION
+         ======================================================================= -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title" id="skills-heading">Skills &amp; Technologies</h2>
+          <p class="section-desc">
+            An honest overview of my programming foundation, ongoing learning areas, and development environment.
+          </p>
+        </div>
+
+        <div class="skills-container">
+
+          <!-- Category 1: Programming Languages -->
+          <div class="skills-category-group reveal">
+            <h3 class="category-heading">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              Programming Languages
+            </h3>
+            
+            <div class="skills-grid">
+              
+              <!-- C# Card -->
+              <div class="skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-wrap" aria-hidden="true">C#</div>
+                  <span class="badge badge-active">Core Focus</span>
+                </div>
+                <h4 class="skill-title">C# Programming</h4>
+                <p class="skill-desc">
+                  Strong grasp of object-oriented programming, classes, interfaces, inheritance, structs, enums, collections, and core language features.
+                </p>
+                <div class="skill-topics">
+                  <span class="topic-tag">OOP</span>
+                  <span class="topic-tag">Interfaces</span>
+                  <span class="topic-tag">Enums &amp; Structs</span>
+                  <span class="topic-tag">Collections</span>
+                </div>
+              </div>
+
+              <!-- JavaScript Card -->
+              <div class="skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-wrap" aria-hidden="true">JS</div>
+                  <span class="badge badge-info">Foundational</span>
+                </div>
+                <h4 class="skill-title">JavaScript (ES6+)</h4>
+                <p class="skill-desc">
+                  Core syntax, asynchronous concepts, DOM manipulation, and interactive client-side logic supporting web development.
+                </p>
+                <div class="skill-topics">
+                  <span class="topic-tag">ES6+</span>
+                  <span class="topic-tag">DOM API</span>
+                  <span class="topic-tag">Event Handling</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 2: Backend Development -->
+          <div class="skills-category-group reveal">
+            <h3 class="category-heading">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              Backend Development &amp; Systems
+            </h3>
+
+            <div class="skills-grid">
+              
+              <!-- .NET Framework & Ecosystem Card -->
+              <div class="skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-wrap" aria-hidden="true">.NET</div>
+                  <span class="badge badge-active">Core Focus</span>
+                </div>
+                <h4 class="skill-title">.NET Ecosystem</h4>
+                <p class="skill-desc">
+                  Building console applications, modular class libraries, handling file I/O operations, and understanding the CLR execution pipeline.
+                </p>
+                <div class="skill-topics">
+                  <span class="topic-tag">Console Apps</span>
+                  <span class="topic-tag">File I/O</span>
+                  <span class="topic-tag">Error Handling</span>
+                  <span class="topic-tag">LINQ Basics</span>
+                </div>
+              </div>
+
+              <!-- ASP.NET Core Concepts Card -->
+              <div class="skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-wrap" aria-hidden="true">API</div>
+                  <span class="badge badge-learning">Active Learning</span>
+                </div>
+                <h4 class="skill-title">ASP.NET Core Concepts</h4>
+                <p class="skill-desc">
+                  Studying Web API fundamentals, routing mechanisms, HTTP request lifecycles, and dependency injection patterns.
+                </p>
+                <div class="skill-topics">
+                  <span class="topic-tag">Web APIs</span>
+                  <span class="topic-tag">Dependency Injection</span>
+                  <span class="topic-tag">HTTP Protocols</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 3: Database Technologies -->
+          <div class="skills-category-group reveal">
+            <h3 class="category-heading">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              Database Technologies
+            </h3>
+
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-wrap" aria-hidden="true">SQL</div>
+                  <span class="badge badge-learning">Active Learning</span>
+                </div>
+                <h4 class="skill-title">SQL &amp; Relational Databases</h4>
+                <p class="skill-desc">
+                  Understanding relational data concepts, table schemas, primary and foreign keys, write queries, and basic CRUD operations.
+                </p>
+                <div class="skill-topics">
+                  <span class="topic-tag">Relational Schemas</span>
+                  <span class="topic-tag">CRUD Operations</span>
+                  <span class="topic-tag">Data Integrity</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Frontend Development -->
+          <div class="skills-category-group reveal">
+            <h3 class="category-heading">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              Frontend Technologies
+            </h3>
+
+            <div class="skills-grid">
+              
+              <!-- Angular Card -->
+              <div class="skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-wrap" aria-hidden="true">NG</div>
+                  <span class="badge badge-learning">Active Learning</span>
+                </div>
+                <h4 class="skill-title">Angular</h4>
+                <p class="skill-desc">
+                  Exploring component-based architecture, TypeScript typings, data binding syntax, and services to consume backend APIs.
+                </p>
+                <div class="skill-topics">
+                  <span class="topic-tag">Components</span>
+                  <span class="topic-tag">TypeScript</span>
+                  <span class="topic-tag">Data Binding</span>
+                </div>
+              </div>
+
+              <!-- HTML5 & CSS3 Card -->
+              <div class="skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-wrap" aria-hidden="true">&lt;/&gt;</div>
+                  <span class="badge badge-info">Foundational</span>
+                </div>
+                <h4 class="skill-title">HTML5 &amp; CSS3</h4>
+                <p class="skill-desc">
+                  Writing semantic markup, accessible layouts, responsive CSS Grid and Flexbox structures, and custom property theming.
+                </p>
+                <div class="skill-topics">
+                  <span class="topic-tag">Semantic HTML</span>
+                  <span class="topic-tag">Flexbox &amp; Grid</span>
+                  <span class="topic-tag">Responsive Design</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 5: Development Tools -->
+          <div class="skills-category-group reveal">
+            <h3 class="category-heading">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              Developer Tools
+            </h3>
+
+            <div class="skills-grid">
+              
+              <!-- Visual Studio 2022 -->
+              <div class="skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-wrap" aria-hidden="true">VS</div>
+                  <span class="badge badge-active">Primary IDE</span>
+                </div>
+                <h4 class="skill-title">Visual Studio 2022</h4>
+                <p class="skill-desc">
+                  Integrated debugging, solution and project management, NuGet package referencing, and C# profiling tools.
+                </p>
+                <div class="skill-topics">
+                  <span class="topic-tag">Solution Explorer</span>
+                  <span class="topic-tag">Debugging</span>
+                  <span class="topic-tag">NuGet</span>
+                </div>
+              </div>
+
+              <!-- VS Code -->
+              <div class="skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-wrap" aria-hidden="true">VSC</div>
+                  <span class="badge badge-info">Daily Driver</span>
+                </div>
+                <h4 class="skill-title">Visual Studio Code</h4>
+                <p class="skill-desc">
+                  Lightweight editing for web projects, TypeScript/Angular work, quick scripts, and terminal management.
+                </p>
+                <div class="skill-topics">
+                  <span class="topic-tag">Extensions</span>
+                  <span class="topic-tag">Integrated Terminal</span>
+                </div>
+              </div>
+
+              <!-- Git & GitHub -->
+              <div class="skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-wrap" aria-hidden="true">GIT</div>
+                  <span class="badge badge-learning">Practicing</span>
+                </div>
+                <h4 class="skill-title">Git &amp; GitHub</h4>
+                <p class="skill-desc">
+                  Essential version control workflows: staging, committing, pushing, branch management, and repository hosting.
+                </p>
+                <div class="skill-topics">
+                  <span class="topic-tag">Commits</span>
+                  <span class="topic-tag">Branching</span>
+                  <span class="topic-tag">Remote Repos</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Secondary Category: Creative & Freelance Skills -->
+          <div class="creative-skills-box reveal">
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary);">
+                Supplementary Creative Skills (Secondary Freelance Offerings)
+              </h3>
+              <p class="creative-badge-note">
+                These creative tools support secondary freelance offerings and multimedia work, maintained alongside my primary focus on software development.
+              </p>
+            </div>
+
+            <div class="creative-tools-grid">
+              
+              <div class="creative-tool-item">
+                <div class="creative-tool-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+                </div>
+                <span class="creative-tool-name">CapCut</span>
+                <span class="creative-tool-role">Shorts &amp; Reels</span>
+              </div>
+
+              <div class="creative-tool-item">
+                <div class="creative-tool-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                </div>
+                <span class="creative-tool-name">Premiere Pro</span>
+                <span class="creative-tool-role">Video Editing</span>
+              </div>
+
+              <div class="creative-tool-item">
+                <div class="creative-tool-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+                </div>
+                <span class="creative-tool-name">Photoshop</span>
+                <span class="creative-tool-role">Graphic Assets</span>
+              </div>
+
+              <div class="creative-tool-item">
+                <div class="creative-tool-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 12s1.5-2 4-2 4 2 4 2-1.5 2-4 2-4-2-4-2z"></path></svg>
+                </div>
+                <span class="creative-tool-name">Canva</span>
+                <span class="creative-tool-role">Layout &amp; Media</span>
+              </div>
+
+              <div class="creative-tool-item">
+                <div class="creative-tool-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </div>
+                <span class="creative-tool-name">PowerPoint</span>
+                <span class="creative-tool-role">Slide Decks</span>
+              </div>
+
+              <div class="creative-tool-item">
+                <div class="creative-tool-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"></path><path d="M12 18v4"></path><path d="M4.93 4.93l2.83 2.83"></path><path d="M16.24 16.24l2.83 2.83"></path><path d="M2 12h4"></path><path d="M18 12h4"></path><path d="M4.93 19.07l2.83-2.83"></path><path d="M16.24 7.76l2.83-2.83"></path></svg>
+                </div>
+                <span class="creative-tool-name">AI Tools</span>
+                <span class="creative-tool-role">Workflow Boost</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. PROJECTS SECTION
+         ======================================================================= -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title" id="projects-heading">Featured Projects</h2>
+          <p class="section-desc">
+            Genuine projects reflecting my actual progress in software engineering, with creative work presented in a distinct category.
+          </p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="projects-filter-bar reveal">
+          <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">
+            All Projects
+          </button>
+          <button type="button" class="filter-btn" data-filter="software" aria-pressed="false">
+            Software &amp; .NET
+          </button>
+          <button type="button" class="filter-btn" data-filter="creative" aria-pressed="false">
+            Creative &amp; Media
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- PROJECT 1: Enterprise Inventory System (Primary / Featured) -->
+          <article class="project-card featured-project reveal" data-category="software">
+            <div class="featured-ribbon">
+              <span class="badge badge-dotnet">Primary .NET Focus</span>
+            </div>
+
+            <!-- Mini Terminal Code Mockup -->
+            <div class="project-preview-box" aria-hidden="true">
+              <div class="mini-terminal">
+                <div class="terminal-cmd">dotnet run --project EnterpriseInventory</div>
+                <div class="terminal-out">[INFO] Initializing InventoryManager...</div>
+                <div class="terminal-out">[DATA] 148 SKUs loaded into memory catalog.</div>
+                <div class="terminal-out success">✔ Order processing pipeline: READY</div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-type-tag">C# Console Application</span>
+                <span class="badge badge-learning">In Development</span>
+              </div>
+
+              <h3 class="project-title">Enterprise Inventory System</h3>
+
+              <p class="project-desc">
+                A C# console application focused on inventory management and order-processing concepts. The project explores object-oriented programming, classes, inheritance, interfaces, enums, structs, and product-related business logic.
+              </p>
+
+              <ul class="project-feature-list">
+                <li>Domain modeling with Product entities, categories, and stock thresholds.</li>
+                <li>Interface-driven storage abstractions for order handling.</li>
+                <li>Structured input validation and custom console exception reporting.</li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span class="topic-tag">C#</span>
+                <span class="topic-tag">.NET 8</span>
+                <span class="topic-tag">OOP Architecture</span>
+                <span class="topic-tag">Interfaces &amp; Enums</span>
+              </div>
+
+              <div class="project-footer-links">
+                <!-- 
+                  CONFIGURABLE LINK: Replace "#" with your real GitHub repo URL when published,
+                  e.g., https://github.com/SamuelFaragallah/enterprise-inventory-system
+                -->
+                <a href="#" class="project-link placeholder-link" title="Repository link will be updated upon public release" aria-label="GitHub Repository for Enterprise Inventory System">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Repository (In Progress)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Console Banking & Transaction Simulator -->
+          <article class="project-card reveal delay-1" data-category="software">
+            <div class="project-preview-box" aria-hidden="true">
+              <div class="mini-terminal">
+                <div class="terminal-cmd">BankingApp.exe --simulate</div>
+                <div class="terminal-out">Created Account: #ACC-9041 (Savings)</div>
+                <div class="terminal-out">Deposit: $1,250.00 | Transfer: -$300.00</div>
+                <div class="terminal-out success">✔ Ledger audit: Balanced</div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-type-tag">C# Practice Project</span>
+                <span class="badge badge-active">Completed Practice</span>
+              </div>
+
+              <h3 class="project-title">Console Banking &amp; Transaction Simulator</h3>
+
+              <p class="project-desc">
+                A structured C# practice application demonstrating object-oriented domain modeling, account balance validation, transaction history tracking, and custom exception handling.
+              </p>
+
+              <ul class="project-feature-list">
+                <li>Inheritance hierarchies with checking and savings account rules.</li>
+                <li>Transaction logging with timestamped records.</li>
+                <li>Defensive programming against overdrafts and invalid numeric inputs.</li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span class="topic-tag">C#</span>
+                <span class="topic-tag">OOP</span>
+                <span class="topic-tag">Exception Handling</span>
+                <span class="topic-tag">Collections</span>
+              </div>
+
+              <div class="project-footer-links">
+                <!-- CONFIGURABLE LINK: Replace "#" with your real GitHub repo URL -->
+                <a href="#" class="project-link placeholder-link" title="Practice source code available locally" aria-label="GitHub Repository for Banking Simulator">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Repository (Practice Code)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Student Records & Grade Calculator -->
+          <article class="project-card reveal" data-category="software">
+            <div class="project-preview-box" aria-hidden="true">
+              <div class="mini-terminal">
+                <div class="terminal-cmd">StudentAnalyzer.exe --report</div>
+                <div class="terminal-out">Evaluating Course Records: CS-101 ... CS-304</div>
+                <div class="terminal-out">LINQ Query: Filter Honor Roll Students</div>
+                <div class="terminal-out success">✔ Formatted summary exported.</div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-type-tag">C# &amp; Data Structures</span>
+                <span class="badge badge-active">Completed Practice</span>
+              </div>
+
+              <h3 class="project-title">Student Records &amp; Grade Calculator</h3>
+
+              <p class="project-desc">
+                An application exploring data structures, LINQ queries, and report generation in C# to calculate GPA, search student records, and export formatted summaries.
+              </p>
+
+              <ul class="project-feature-list">
+                <li>LINQ query syntax for filtering, sorting, and statistical calculations.</li>
+                <li>Dynamic data storage using generic Lists and Dictionaries.</li>
+                <li>Clean text formatting for readable console reports.</li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span class="topic-tag">C#</span>
+                <span class="topic-tag">LINQ</span>
+                <span class="topic-tag">Data Structures</span>
+                <span class="topic-tag">Algorithms</span>
+              </div>
+
+              <div class="project-footer-links">
+                <!-- CONFIGURABLE LINK: Replace "#" with your real GitHub repo URL -->
+                <a href="#" class="project-link placeholder-link" title="Practice code stored in local workspace" aria-label="GitHub Repository for Student Records App">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Repository (Practice Code)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Creative Work - Video Editing & Motion Assets -->
+          <article class="project-card reveal delay-1" data-category="creative">
+            <div class="creative-preview-box project-preview-box" aria-hidden="true">
+              <div class="creative-icon-circle">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+              <span style="font-size: 0.825rem; font-weight: 600; opacity: 0.9;">9:16 Short-Form Motion Editing</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-type-tag" style="color: #ec4899;">Multimedia Showcase</span>
+                <span class="badge badge-info">Creative Work</span>
+              </div>
+
+              <h3 class="project-title">YouTube Shorts &amp; Reels Editing Showcase</h3>
+
+              <p class="project-desc">
+                High-retention short-form video edits optimized for vertical formats. Features rhythmic pacing, clean captions, audio leveling, and visual hooks designed for social engagement.
+              </p>
+
+              <ul class="project-feature-list">
+                <li>Dynamic subtitle styling and keyframed motion emphasis.</li>
+                <li>Audio cleanup, ambient mixing, and sound design.</li>
+                <li>Short-form storytelling tailored for YouTube and Reels.</li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span class="topic-tag">CapCut</span>
+                <span class="topic-tag">Premiere Pro</span>
+                <span class="topic-tag">Sound Design</span>
+                <span class="topic-tag">Motion Pacing</span>
+              </div>
+
+              <div class="project-footer-links">
+                <!-- CONFIGURABLE LINK: Replace with actual portfolio link or YouTube playlist -->
+                <a href="#" class="project-link placeholder-link" title="Portfolio sample reels available upon request" aria-label="View Video Editing Samples">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Sample Reels (On Request)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. LEARNING JOURNEY (TIMELINE)
+         ======================================================================= -->
+    <section class="section" id="journey" aria-labelledby="journey-heading">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Academic &amp; Self-Directed Path</span>
+          <h2 class="section-title" id="journey-heading">My Learning Journey</h2>
+          <p class="section-desc">
+            A transparent timeline of my ongoing Computer Science studies and self-driven engineering milestones.
+          </p>
+        </div>
+
+        <div class="journey-timeline">
+
+          <!-- Entry 1: Computer Science Studies -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Computer Science Studies</h3>
+                <span class="timeline-period">Ongoing / Academic Studies</span>
+              </div>
+              <p class="timeline-desc">
+                Pursuing comprehensive foundational knowledge in computer science, including data structures, algorithmic complexity, computer architecture, and discrete mathematics. Applying academic principles directly to practical programming exercises.
+              </p>
+              <div class="timeline-key-topics">
+                <span class="topic-tag">Data Structures</span>
+                <span class="topic-tag">Algorithms</span>
+                <span class="topic-tag">Computer Systems</span>
+                <span class="topic-tag">Problem Solving</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Entry 2: C# and .NET Backend Development -->
+          <div class="timeline-item reveal delay-1">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-title">C# &amp; .NET Backend Specialization</h3>
+                <span class="timeline-period">Ongoing Learning &amp; Practice</span>
+              </div>
+              <p class="timeline-desc">
+                Dedicated focus on mastering modern C# syntax and .NET development patterns. Practicing object-oriented architecture, interfaces, type safety, collections, LINQ, and exploring ASP.NET Core concepts to build reliable backend systems.
+              </p>
+              <div class="timeline-key-topics">
+                <span class="topic-tag">C# 12 / .NET 8</span>
+                <span class="topic-tag">OOP Design</span>
+                <span class="topic-tag">LINQ Queries</span>
+                <span class="topic-tag">ASP.NET Core Concepts</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Entry 3: Full-Stack Development with Angular -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Frontend &amp; Full-Stack Growth with Angular</h3>
+                <span class="timeline-period">In Progress</span>
+              </div>
+              <p class="timeline-desc">
+                Expanding frontend capabilities to complement backend skills. Learning Angular component architecture, TypeScript typing, event-driven data binding, and preparing to connect Angular client interfaces with .NET API backends.
+              </p>
+              <div class="timeline-key-topics">
+                <span class="topic-tag">Angular</span>
+                <span class="topic-tag">TypeScript</span>
+                <span class="topic-tag">Component Architecture</span>
+                <span class="topic-tag">HTML5 / CSS3</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Entry 4: Independent Technical Practice -->
+          <div class="timeline-item reveal delay-1">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Independent Projects &amp; Technical Practice</h3>
+                <span class="timeline-period">Continuous Practice</span>
+              </div>
+              <p class="timeline-desc">
+                Reinforcing software principles through hands-on console applications, domain logic simulations, code refactoring exercises, and Git version control workflows.
+              </p>
+              <div class="timeline-key-topics">
+                <span class="topic-tag">Console Applications</span>
+                <span class="topic-tag">Git Workflows</span>
+                <span class="topic-tag">Domain Logic Modeling</span>
+                <span class="topic-tag">Code Organization</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. SERVICES SECTION
+         ======================================================================= -->
+    <section class="section" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Offerings &amp; Freelance</span>
+          <h2 class="section-title" id="services-heading">Services I Offer</h2>
+          <p class="section-desc">
+            Primary software development services scoped honestly to my current skillset, supported by supplementary creative services.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Primary Service: C# & .NET Development (Featured Card) -->
+          <div class="service-featured-card reveal">
+            <span class="featured-service-badge">Primary Professional Service</span>
+
+            <div>
+              <h3 class="service-title">C# &amp; .NET Software Development</h3>
+              <p class="service-desc">
+                Hands-on development for appropriately scoped beginner-level programming tasks, console applications, and small software projects matching my current skills.
+              </p>
+            </div>
+
+            <div class="service-deliverables">
+              <div class="deliverable-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Console applications and utility tools in C#</span>
+              </div>
+              <div class="deliverable-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Object-oriented modeling, class restructuring, and bug fixes</span>
+              </div>
+              <div class="deliverable-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>File processing, text parsing, and structured data handling</span>
+              </div>
+              <div class="deliverable-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Clean, well-commented code following standard C# conventions</span>
+              </div>
+            </div>
+
+            <div style="margin-top: auto;">
+              <a href="#contact" class="btn btn-primary btn-sm">
+                Discuss a Project
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Secondary Creative Services Column -->
+          <div class="creative-services-stack">
+            
+            <!-- Service 2: YouTube Shorts & Reels Editing -->
+            <div class="service-card reveal delay-1">
+              <div class="service-card-top">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                </div>
+                <div>
+                  <h3>Shorts &amp; Reels Editing</h3>
+                  <span class="service-tools-note">CapCut / Adobe Premiere Pro</span>
+                </div>
+              </div>
+              <p>
+                Editing short-form videos for social platforms with tight pacing, engaging captions, synchronized audio, and polished delivery.
+              </p>
+            </div>
+
+            <!-- Service 3: PowerPoint Presentation Design -->
+            <div class="service-card reveal delay-2">
+              <div class="service-card-top">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </div>
+                <div>
+                  <h3>PowerPoint Presentation Design</h3>
+                  <span class="service-tools-note">Microsoft PowerPoint / Canva</span>
+                </div>
+              </div>
+              <p>
+                Creating clean, organized slide decks with clear visual hierarchy, well-formatted charts, and consistent typography.
+              </p>
+            </div>
+
+            <!-- Service 4: Graphic Design -->
+            <div class="service-card reveal delay-3">
+              <div class="service-card-top">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 12s1.5-2 4-2 4 2 4 2-1.5 2-4 2-4-2-4-2z"></path></svg>
+                </div>
+                <div>
+                  <h3>Graphic Design</h3>
+                  <span class="service-tools-note">Photoshop / Canva</span>
+                </div>
+              </div>
+              <p>
+                Crafting social media graphics, custom thumbnails, banners, and digital promotional assets aligned with client needs.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. CAREER OBJECTIVE SECTION
+         ======================================================================= -->
+    <section class="section" id="objective" aria-labelledby="objective-heading">
+      <div class="container">
+        
+        <div class="career-objective-card reveal">
+          <span class="objective-tag" id="objective-heading">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            Professional Career Objective
+          </span>
+
+          <blockquote class="objective-quote">
+            "My goal is to grow into a capable .NET Software Developer by strengthening my C#, backend development, database, and software engineering skills through continuous learning and practical projects. I'm looking for an opportunity to contribute to a development team, learn from experienced engineers, and build reliable software that solves real problems."
+          </blockquote>
+
+          <div class="objective-pillars">
+            <div class="pillar-item">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div>
+                <h4 class="pillar-title">Readiness to Learn</h4>
+                <p class="pillar-desc">Receptive to senior feedback, code reviews, and industry practices.</p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div>
+                <h4 class="pillar-title">Engineering Discipline</h4>
+                <p class="pillar-desc">Commitment to writing readable, structured, and testable code.</p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div>
+                <h4 class="pillar-title">Long-Term Value</h4>
+                <p class="pillar-desc">Aiming to grow into an impactful member of a collaborative .NET team.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         9. CONTACT SECTION
+         ======================================================================= -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title" id="contact-heading">Contact &amp; Connect</h2>
+          <p class="section-desc">
+            Have an open Junior .NET opportunity, a freelance inquiry, or just want to connect? Reach out below.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Information & Social Profiles -->
+          <div class="contact-info-panel reveal">
+            
+            <div class="contact-info-header">
+              <h3>Let's start a conversation</h3>
+              <p>I am actively seeking junior software development opportunities and selective freelance collaborations.</p>
+            </div>
+
+            <div class="contact-channels">
+              
+              <!-- Direct Email Item -->
+              <div class="contact-channel-item">
+                <div class="channel-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <div class="channel-label">Email Address</div>
+                  <!-- CONFIGURABLE EMAIL: Update placeholder address below when ready -->
+                  <a href="mailto:samuel.faragallah@example.com" class="channel-val" style="color: var(--accent-primary);">
+                    samuel.faragallah@example.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Location / Availability -->
+              <div class="contact-channel-item">
+                <div class="channel-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <div class="channel-label">Availability &amp; Location</div>
+                  <div class="channel-val">Remote / On-site (Open to discussion)</div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Social Links (Configurable Placeholders) -->
+            <div class="social-links-group">
+              <span class="social-links-label">Connect on Social Platforms</span>
+              <div class="social-icons-row">
+                
+                <!-- GitHub Placeholder -->
+                <a href="https://github.com/SamuelFaragallah" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile (Placeholder: update in HTML)">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+
+                <!-- LinkedIn Placeholder -->
+                <a href="https://linkedin.com/in/samuelfaragallah" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile (Placeholder: update in HTML)">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+
+                <!-- YouTube Placeholder -->
+                <a href="https://youtube.com/@SamuelFaragallah" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube Channel (Placeholder: update in HTML)">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                </a>
+
+                <!-- Facebook Placeholder -->
+                <a href="https://facebook.com/samuelfaragallah" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook Profile (Placeholder: update in HTML)">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="contact-form-card reveal delay-1">
+            
+            <!-- Honest Client-Side Notice -->
+            <div class="form-notice-banner" role="note">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              <span>Client-side form with immediate input validation. Messages are formatted for direct email delivery.</span>
+            </div>
+
+            <form id="contact-form" class="contact-form" novalidate aria-label="Send a message to Samuel Faragallah">
+              
+              <div class="form-row-2col">
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">
+                    Your Name <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <input type="text" id="contact-name" name="name" class="form-control" placeholder="Jane Doe" required autocomplete="name">
+                  <span class="error-message" id="contact-name-error" role="alert"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">
+                    Your Email <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <input type="email" id="contact-email" name="email" class="form-control" placeholder="jane@example.com" required autocomplete="email">
+                  <span class="error-message" id="contact-email-error" role="alert"></span>
+                </div>
+              </div>
+
+              <!-- Subject Field -->
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">
+                  Subject <span class="required-star" aria-hidden="true">*</span>
+                </label>
+                <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="Junior .NET Developer Opportunity / Inquiry" required>
+                <span class="error-message" id="contact-subject-error" role="alert"></span>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">
+                  Message <span class="required-star" aria-hidden="true">*</span>
+                </label>
+                <textarea id="contact-message" name="message" class="form-control" placeholder="Hi Samuel, I came across your portfolio and would like to discuss..." required></textarea>
+                <span class="error-message" id="contact-message-error" role="alert"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <div>
+                <button type="submit" class="btn btn-primary" id="contact-submit-btn">
+                  Validate &amp; Prepare Message
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+              </div>
+
+              <!-- Inline Feedback Display -->
+              <div id="form-feedback" class="form-feedback-container" role="status" aria-live="polite"></div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       10. FOOTER
+       ========================================================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-brand-title">Samuel Faragallah</span>
+          <p class="footer-brand-desc">Computer Science Student &bull; Aspiring Junior .NET Developer</p>
+        </div>
+
+        <a href="#hero" class="back-to-top-btn" id="back-to-top" aria-label="Back to top of page">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          Back to Top
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="copyright-year">2026</span> Samuel Faragallah. All rights reserved.
+        </p>
+        <p class="footer-tech-note">
+          Built with semantic HTML5, modern CSS3 &amp; vanilla JavaScript.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Application Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
